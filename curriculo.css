@@ -1,0 +1,440 @@
+:root{
+    --size-h3-grande: 6rem;
+    --font-pricipal:'Poppins', sans-serif;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color:#13293d ;
+}
+main{
+    margin: auto;
+    max-width: 1200px;
+
+}
+
+p,h1,h2,h3,h4{
+    color: white;
+}
+header {
+    animation: degrade 5s ease alternate infinite ;
+    background: linear-gradient(45deg,
+    #003761, #3EA9FA, #a000e0, #437ca8, #83d4fa);    
+    background-size: 300% 300%;
+    background-color:var(--azul-verdeado) ;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    text-align: center; 
+    
+}
+
+
+ .text-claro-h1{
+    color: white;
+    font-size: 5vw;
+    margin-bottom: 20px;
+    margin-top: 50px;
+ }
+ .text-claro-h2{
+    color: rgba(255, 255, 255, 0.404);
+    font-size: 2.5vw;
+    margin-bottom: 20px;
+}
+.text-claro-h3{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.5vw;
+}
+.text-claro-h3:hover{
+    color: white;
+    text-decoration: underline;
+}
+a{
+    color: white;
+    padding: 5px;
+}
+
+
+.foto-guilherme{
+    width: 300px;
+    border-radius: 50%;
+    border: solid 4px rgba(255, 255, 255, 0.404);
+    box-shadow:0px 0px 20px 2px rgba(255, 255, 255, 0.493);
+    margin: 80px 0px;
+    
+
+}
+.icon-pq{
+    width: 30px;
+    height: 30px;
+    margin: 2px
+}
+.pop-animacao{
+    font-family: 'Courier New', Courier, monospace;
+    font-size:15px ;
+    font-weight: 800 ;
+    animation: pop 1s ease-in alternate infinite;
+    margin: -220px 29vw;
+    padding: 10px;
+    border-radius: 15px;
+    height: 65px;
+    width: 170px;
+    background: rgba(255, 255, 255, 0.205);
+}
+
+
+.space-nav {
+    background: #13293d6e !important ;
+    margin-bottom: 25px;
+}
+.center-fix{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 80vh;
+}
+.end-fix{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 100%;
+}
+
+
+/*
+Animações
+-----------
+*/
+
+@keyframes degrade {
+    from{  
+        background-position: 0% 50%;     
+    }
+    to{
+        background-position: 100% 50%;
+    }
+}
+
+@keyframes pop {
+    to{transform: translateY(15px);}
+}
+
+/*
+Responsividade @media
+-----------------------
+*/
+
+@media (max-width: 1560px) {
+    .pop-animacao{
+       margin:-220px 20vw; 
+    }
+
+}
+@media (max-width: 1100px) {
+    .pop-animacao{
+       margin:-220px 10vw; 
+    }
+}
+@media (max-width: 830px) {
+    .pop-animacao{
+        margin: -20px auto 20px auto;
+    }
+    .display-h{
+        display: flex;
+        flex-direction: column;
+        height: 30vh;
+    }
+    .text-claro-h1{
+        margin-top: 0px;
+        font-size: 5vw;
+    }
+    .text-claro-h2{
+        font-size: 2,5vw;
+    }
+    .text-claro-h3{
+        font-size: 3vw;
+    }
+}
+@media (min-width:1960px) {
+
+    .text-claro-h1{
+        font-size: 6em;
+    }
+    .text-claro-h2{
+        font-size: 4em;
+    }
+    .text-claro-h3{
+        font-size: 3em;
+    }
+}
+@media (max-height:900px) {
+
+    .pop-animacao{
+        margin: -20px auto 20px auto;
+    }
+}
+
+
+/*frase*/
+.sec-dark-01{
+    text-align: center;
+    background: #13293d ;
+    height:98%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.frase-str{
+    color: rgba(255, 255, 255, 0.363);
+}
+.frase-motivacao{
+    display:block;
+    max-width: 900px;
+    font-size: 5vw;
+    color: white;
+}
+.letra-colorida{
+    background-color: #f3ec78;
+    background: linear-gradient(90deg, blue,#a000e0, #c779d0,#437ca8, #13293d,#a000e0);
+    background-size: 400% 400%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rainbow 4s ease alternate infinite;
+    height: fit-content;
+    font-size: 5vw;
+    max-width: 900px;
+    padding-bottom: 4px !important;
+
+}
+
+/*animações*/
+
+@keyframes rainbow {
+    from{  
+        background-position: 0% 50%;     
+    }
+    to{
+        background-position: 100% 50%;
+    }
+}
+
+/*
+Responsividade @media
+-----------------------
+*/
+@media (max-width:1100px) {
+    .frase-motivacao{
+        font-size: 10vw;
+        padding: 0px 25px;
+        
+    }
+    .letra-colorida{
+        font-size: 10vw;
+        margin-bottom: 40px;
+        padding: 0px 25px;
+    }  
+   
+}
+/*My services*/
+.sec-dark-02{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    max-width: 1200px;
+}
+.box-style-00{
+    background: rgba(128, 128, 128, 0.178);
+    margin: 20px 10px;
+    border-radius: 20px;
+    padding: 10px 20px;
+    max-width: 300px;
+}
+.serv-fix{
+    text-align: center;
+    margin: 0px 10px 20px 10px;
+}
+.box-fix{
+    display: flex;
+}
+.org-row{
+    display: flex;
+}
+
+.animacao-360{
+    animation: girapython 3s linear  infinite;
+    
+}
+
+@media (max-width:710px) {
+    .box-fix{
+        display: block;
+    }
+}
+
+@keyframes girapython {
+    to{
+        transform: rotate(-360deg);
+    }
+}
+
+.animacao-180{
+    animation: girafixing 3s ease-in  alternate infinite;
+}
+
+.icon-work{
+    width: 80px;
+    margin-left: -20px;
+}
+
+@keyframes girafixing {
+    to{
+        transform: rotate(40deg);
+    }
+}
+
+/*My projects*/
+.sec-dark-03{
+    padding-top: 50px;
+    max-width: 1200px;
+    text-align: center;
+}
+.size-projetos{
+    max-width: 350px;
+    margin: 10px;
+    border-radius: 20px;
+    transition: 1s;
+}
+.size-projetos:hover{
+    transform: scale(1.1);
+}
+
+#link-github{
+    color: rgba(255, 255, 255, 0.5);
+    transition: 1s;
+}
+
+#link-github:hover{
+    color: #FFFFFF;
+    text-shadow: 0 -1px 4px #FFF, 0 -2px 10px rgb(0, 174, 255), 0 -10px 20px #0099ff, 0 -18px 40px rgb(0, 38, 255);
+    text-decoration: none;
+}
+
+
+/*About me*/
+.sec-dark-04{
+    display: flex;
+    flex-direction: column;
+    height:98vh;
+    max-width: 1200px;
+}
+.sobre-mim{
+    font-family:a'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    color: rgb(0, 255, 136);
+    text-align: center;
+}
+
+.titulo-sobremim{
+    color: white;
+}
+
+/*.box-education{
+    
+}*/
+
+.education{
+    /*display: inline-block;
+    background-image: linear-gradient(to right,rebeccapurple , steelblue , turquoise );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: black;
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.1;*/
+    color: #fff;
+  text-shadow:
+    
+    0 0 5px #fff,
+    0 0 19px #fff,
+    0 0 40px #0fa,
+    0 0 80px #0fa,
+    0 0 90px #0fa,
+    0 0 100px #0fa,
+    0 0 150px #0fa;
+}
+.textos{
+    color: white;
+}
+
+.hobbies {
+    display: inline-block;
+    background-image: linear-gradient(to right,rgb(228, 214, 20) , rgb(174, 255, 13) , rgb(43, 255, 0) );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: black;
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.1;
+}
+
+/*Footer
+----------*/
+footer{
+    background: #334557;
+    box-shadow: 0px -20px 40px 10px #334557;
+}
+.org-footer{
+    max-width: 1200px;
+    margin: auto;
+    height: 700px; text-align: center;
+}
+.lets-work{
+    margin: auto;
+    padding-top: 80px;
+    height: 50%;
+    font-size: var(--size-h3-grande);
+}
+.btn-perso-01{
+    width: 200px;
+    height: 70px;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    box-shadow: 0px 0px 20px -10px black;
+    transition: 1s;
+}
+
+.btn-perso-01:hover{
+    transform: translateY(-10px);
+    box-shadow:0px 0px 50px -5px #a000e0;
+    background: #a000e06b;
+    text-shadow: 1vw 1vw 1vw #000, 0 0 3vw #24ff00, 0 0 3vw rgb(255, 255, 255), 0 0 3vw #ffffff;
+}
+.a-perso-01{
+    text-decoration: none !important;
+    color: white !important;
+    
+}
+
+@media (max-width:1200px) {
+    .lets-work{
+        padding-top: 40px;
+        height: 80%;
+    }
+}
+@media (max-height:700px) {
+    .lets-work{
+        padding-top: 10px;
+        height: 65%;
+    }
+}

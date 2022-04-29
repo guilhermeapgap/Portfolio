@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+
+    <style>
+    *{
+        padding: 0px;
+        margin: 0px;
+    }
+    header {
+        animation: degrade 5s ease alternate infinite ;
+        background: linear-gradient(45deg,
+        #003761, #3EA9FA, #a000e0, #437ca8, #83d4fa);    
+        background-size: 300% 300%;
+        background-color:var(--azul-verdeado) ;
+        background-repeat: no-repeat;
+        height: 100vh;
+        overflow-x: hidden;
+        text-align: center; 
+        
+}
+    .foto-gui{
+        width: 250px;
+        border-radius: 50%;
+        border: solid 4px rgba(255, 255, 255, 0.404);
+        box-shadow:0px 0px 20px 2px rgba(255, 255, 255, 0.493);
+        margin-top: 40px;
+        margin-bottom: 30px;
+
+    }
+
+
+    .back-index{
+        color: white;
+        font-size: 2em;
+        }
+        
+    .space-nav {
+        background: #13293d6e !important ;
+        margin-bottom: 25px;
+        padding:10px ;
+    }
+
+
+    .efeito-mirror{
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur( 10px );
+        -webkit-backdrop-filter: blur( 10px );
+        max-width: 900px;
+        margin: 120px  20px;
+        border-radius: 10px;
+
+    }
+
+    .social-medias > *{
+        width: 40px;
+        margin: 20px;
+        padding-bottom: 20px;
+        transition: 0.5s;
+    }
+
+    .social-medias > *:hover {
+        transform: scale(1.2);
+    }
+
+    #arrow-back{
+        width: 15px;
+    }
+
+    @keyframes degrade {
+        from{  
+            background-position: 0% 50%;     
+        }
+        to{
+            background-position: 100% 50%;
+        }
+    }
+
+    @media (min-width:940px) {
+        .efeito-mirror{
+            min-width: 900px;
+        }
+    }
+
+
+    /*--------------
+    efeito mirror
+    ---------------*/
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar-dark bg-dark fixed-top space-nav">
+            <!-- Logo -->
+            <a href="index.html" class="navbar-brand"> <img src="Imgagens/arrow-back.png" alt="arrow-back" id="arrow-back"> Guilherme Augusto pereira</a>
+        </nav>
+            <div  class="d-lg-flex justify-content-lg-center">
+                <div class="efeito-mirror ">
+                    <img src="Imgagens/guilherme-me-semfundo.png" alt="me" class="foto-gui">
+
+                    <a href="https://curriculo-guilhermeap.netlify.app" class="text-white d-flex justify-content-center">Meu curriculo</a>
+
+                    <div class="d-flex justify-content-around">
+
+                        <a href="https://www.instagram.com/guilhermeapgap/" class="social-medias" target="_blank"><img  src="Imgagens/white-instagram.png" alt="insta"></a>
+
+                        <a href="https://www.linkedin.com/in/guilherme-augusto-60892720b/" class="social-medias" target="_blank"><img  src="Imgagens/icon-linkedin-white.png" alt="linkedin" ></a>
+
+                        <a href="https://wa.me/+5561991823714" class="social-medias" target="_blank"><img src="Imgagens/whatsapp-branco" alt="whatsapp"></a>
+
+                        <a href="https://github.com/guilhermeapgap" class="social-medias" target="_blank"><img src="Imgagens/github-icon.jpg" alt="github"></a>
+                        
+                    </div>
+                </div>
+            </div>
+    </header>
+</body>
+</html>
