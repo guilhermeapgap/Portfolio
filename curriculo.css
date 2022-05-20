@@ -7,9 +7,12 @@
     margin: 0px;
     scroll-behavior: smooth;
 }
-
+body,html{
+    margin: 0px;
+    height: 100%;
+}
 body{
-    background-color:#13293d ;
+    background-color:#0f2957 ;
 }
 main{
     margin: auto;
@@ -22,10 +25,9 @@ p,h1,h2,h3,h4{
 }
 header {
     animation: degrade 5s ease alternate infinite ;
-    background: linear-gradient(45deg,
-    #003761, #3EA9FA, #a000e0, #437ca8, #83d4fa);    
+    background-image: linear-gradient(to right top, #3f23ff, #005dff, #007dff, #0096fe, #14abec);
     background-size: 300% 300%;
-    background-color:var(--azul-verdeado) ;
+
     background-repeat: no-repeat;
     overflow-x: hidden;
     text-align: center; 
@@ -106,7 +108,6 @@ a{
 /*frase*/
 .sec-dark-01{
     text-align: center;
-    background: #13293d ;
     height:98%;
     display: flex;
     justify-content: center;
@@ -133,9 +134,8 @@ a{
     -webkit-text-fill-color: transparent;
     animation: rainbow 4s ease alternate infinite;
     height: fit-content;
-    font-size: 5vw;
-    max-width: 900px;
     padding-bottom: 4px !important;
+    font-size: 6vw;
 
 }
 
@@ -179,6 +179,29 @@ a{
     margin-left: -20px;
 }
 
+.carousel-config{
+    margin: 20px;
+
+}
+.img-carousel{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+/**/ .carousel-indicators-position{
+    bottom: -65px;
+} 
+.indicador{
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50%;
+}
+.control-icon-prev{
+    display: none;
+}
+.control-icon-next{
+    display: none;
+}
 
 
 /*My projects*/
@@ -230,65 +253,29 @@ a{
     height:98vh;
     max-width: 1200px;
 }
-.sobre-mim{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
-    color: rgb(0, 255, 136);
-    text-align: center;
-}
 
-.titulo-sobremim{
-    color: white;
-}
+
 
 /*.box-education{
     
 }*/
 
-.education{
-    color: #fff;
-    text-shadow:
-    
-    0 0 5px #fff,
-    0 0 19px #fff,
-    0 0 40px #0fa,
-    0 0 80px #0fa,
-    0 0 90px #0fa,
-    0 0 100px #0fa,
-    0 0 150px #0fa;
-}
 .textos{
     color: white;
-}
-
-.hobbies {
-    display: inline-block;
-    background-image: linear-gradient(to right,rgb(228, 214, 20) , rgb(174, 255, 13) , rgb(43, 255, 0) );
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: black;
-    font-size: 2rem;
-    font-weight: bold;
-    line-height: 1.1;
 }
 
 /*Footer
 ----------*/
 footer{
-    background: #334557;
-    box-shadow: 0px -20px 40px 10px #334557;
+    background: #17418A;
+    box-shadow: 0px -100px 40px 10px #17418A;
 }
 .org-footer{
     max-width: 1200px;
     margin: auto;
-    height: 700px; text-align: center;
+    text-align: center;
 }
-.lets-work{
-    margin: auto;
-    padding-top: 80px;
-    height: 50%;
-    font-size: var(--size-h3-grande);
-}
+
 .btn-perso-01{
     width: 200px;
     height: 70px;
@@ -304,7 +291,6 @@ footer{
     transform: translateY(-10px);
     box-shadow:0px 0px 50px -5px #a000e0;
     background: #a000e06b;
-    text-shadow: 1vw 1vw 1vw #000, 0 0 3vw #24ff00, 0 0 3vw rgb(255, 255, 255), 0 0 3vw #ffffff;
 }
 .a-perso-01{
     text-decoration: none !important;
@@ -372,13 +358,13 @@ Responsividade @media
     }
     .text-claro-h1{
         margin-top: 0px;
-        font-size: 5vw;
+        font-size: 2em;
     }
     .text-claro-h2{
-        font-size: 2,5vw;
+        font-size: 1em;
     }
     .text-claro-h3{
-        font-size: 3vw;
+        font-size: 0.8em;
     }
 }
 @media (min-width:1960px) {
@@ -429,3 +415,7 @@ Responsividade @media
         display: block;
     }
 }
+
+
+
+

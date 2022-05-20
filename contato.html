@@ -14,9 +14,8 @@
     }
     header {
         animation: degrade 5s ease alternate infinite ;
-        background: linear-gradient(45deg,
-        #003761, #3EA9FA, #a000e0, #437ca8, #83d4fa);    
         background-size: 300% 300%;
+        background-image: linear-gradient(to right top, #3f23ff, #005dff, #007dff, #0096fe, #14abec);
         background-color:var(--azul-verdeado) ;
         background-repeat: no-repeat;
         height: 100vh;
@@ -71,6 +70,21 @@
     #arrow-back{
         width: 15px;
     }
+   .btn-perso-01{
+    width: 180px;
+    height: 50px;
+    margin: auto;
+    border-radius: 30px;
+    border: none;
+    font-size: 1.5em;
+    box-shadow: 0px 0px 20px -10px rgba(255, 255, 255, 0.733);
+    transition: 1s;
+} 
+
+.btn-perso-01:hover{
+    transform: translateY(-10px);
+    box-shadow:  0px 0px 50px -5px #ffffff7c;
+}
 
     @keyframes degrade {
         from{  
@@ -96,15 +110,15 @@
 </head>
 <body>
     <header>
-        <nav class="navbar-dark bg-dark fixed-top space-nav">
+        <nav class="navbar-dark bg-dark fixed-top space-nav text-left">
             <!-- Logo -->
-            <a href="index.html" class="navbar-brand"> <img src="Imgagens/arrow-back.png" alt="arrow-back" id="arrow-back"> Guilherme Augusto pereira</a>
+            <a href="index.html" class="navbar-brand"> <img src="Imgagens/arrow-back.png" alt="arrow-back" id="arrow-back"> Home</a>
         </nav>
             <div  class="d-lg-flex justify-content-lg-center">
                 <div class="efeito-mirror ">
                     <img src="Imgagens/guilherme-me-semfundo.png" alt="me" class="foto-gui">
 
-                    <a href="https://curriculo-guilhermeap.netlify.app" class="text-white d-flex justify-content-center">Meu curriculo</a>
+                    <a href="https://curriculo-guilhermeap.netlify.app" class="btn-perso-01 text-white d-flex justify-content-center align-items-center">Meu curriculo</a>
 
                     <div class="d-flex justify-content-around">
 
